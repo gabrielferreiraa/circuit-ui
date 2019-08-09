@@ -41,7 +41,8 @@
     "docz:build": "docz build",
     "prepublishOnly": "yarn build:js",
     "check:security": "audit-ci --critical",
-    "check:licenses": "license-checker --production --summary --failOn=GPLv3"
+    "check:licenses": "license-checker --production --summary --failOn=GPLv3",
+    "styles": "node -r esm build/test.js"
   },
   "config": {
     "commitizen": {
@@ -93,9 +94,11 @@
     "docz": "^1.2.0",
     "docz-core": "^1.2.0",
     "docz-theme-default": "^1.2.0",
+    "emotion-server": "^10.0.14",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "eslint-plugin-prettier": "^3.1.0",
+    "esm": "^3.2.25",
     "expect": "^24.5.0",
     "gh-pages": "^2.0.1",
     "glob": "^7.1.3",
